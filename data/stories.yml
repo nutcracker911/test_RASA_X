@@ -1,0 +1,36 @@
+stories:
+- steps:
+  - intent: greet
+  - action: utter_greet
+  story: start
+- steps:
+  - action: utter_greet
+  - intent: N
+  - action: utter_faq_name
+  story: start0
+- steps:
+  - action: utter_greet
+  - intent: Y
+  - action: utter_take_inform
+  story: start1
+- steps:
+  - action: utter_take_inform
+  - intent: N
+  - action: utter_connect
+  story: start2
+- steps:
+  - action: utter_take_inform
+  - intent: Y
+  - action: utter_goodbye
+  story: start3
+- steps:
+  - action: utter_faq_name
+  - intent: N
+  - action: utter_Sorry
+  story: start4
+- steps:
+  - action: utter_faq_name
+  - intent: Y
+  - action: utter_understand
+  story: start5
+version: '2.0'

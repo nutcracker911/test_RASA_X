@@ -1,0 +1,22 @@
+version: "2.0"
+
+nlu:
+
+- intent: Y
+  examples: |
+    - да
+    - конечно
+    - точно
+
+- intent: N
+  examples: |
+    - нет
+    - неа
+    - вы не правы
+    
+- intent: greet
+  examples: |
+    - привет
+    - хай
+    - здарова
+
