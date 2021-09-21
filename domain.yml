@@ -1,0 +1,24 @@
+intents:
+- Y
+- N
+- greet
+responses:
+  utter_Sorry:
+  - text: Просим прощения, мы уточним данные
+  utter_connect:
+  - text: Соеднияю с оператром
+  utter_faq_name:
+  - text: Подскажите, по нашим данным этот номер телефона принадлежит Иванову Петру
+      Ивановичу, адрес Ленина 45, это так?
+  utter_goodbye:
+  - text: Спасибо, если у вас будут вопросы, звоните по номеру 8800
+  utter_greet:
+  - text: Добрый день, вас беспокоит Энергосбыт, я говорю с Петром Ивановичем?
+  utter_take_inform:
+  - text: Ваша задолженность составляет 2000 рублей по лицевому счету 4478
+  utter_understand:
+  - text: Задолженность по этому адресу 2000 р
+session_config:
+  carry_over_slots_to_new_session: true
+  session_expiration_time: 60
+version: '2.0'
